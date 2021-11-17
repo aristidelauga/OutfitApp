@@ -17,6 +17,7 @@
 		9213419427441632002339F0 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9213419327441632002339F0 /* IntroView.swift */; };
 		9259377627441B560007332A /* ClothesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9259377527441B560007332A /* ClothesView.swift */; };
 		9259377827444FD00007332A /* ClothModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9259377727444FD00007332A /* ClothModel.swift */; };
+		929E007527457268006BF0AE /* OutfitMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E007427457268006BF0AE /* OutfitMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		9213419327441632002339F0 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 		9259377527441B560007332A /* ClothesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesView.swift; sourceTree = "<group>"; };
 		9259377727444FD00007332A /* ClothModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothModel.swift; sourceTree = "<group>"; };
+		929E007427457268006BF0AE /* OutfitMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutfitMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				9213416B27440769002339F0 /* ContentView.swift */,
 				9213419327441632002339F0 /* IntroView.swift */,
 				9259377527441B560007332A /* ClothesView.swift */,
+				929E007427457268006BF0AE /* OutfitMenuView.swift */,
 				9259377727444FD00007332A /* ClothModel.swift */,
 				9213416D2744076B002339F0 /* Assets.xcassets */,
 				9213416F2744076B002339F0 /* Preview Content */,
@@ -266,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				929E007527457268006BF0AE /* OutfitMenuView.swift in Sources */,
 				9213416C27440769002339F0 /* ContentView.swift in Sources */,
 				9259377627441B560007332A /* ClothesView.swift in Sources */,
 				9213416A27440769002339F0 /* OutfitAppApp.swift in Sources */,

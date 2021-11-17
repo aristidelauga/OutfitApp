@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct IntroView: View {
     
     
@@ -50,6 +51,7 @@ struct IntroView: View {
     }
 }
 
+@available(iOS 15.0, *)
 struct IntroView_Previews: PreviewProvider {
     static var previews: some View {
         IntroView()

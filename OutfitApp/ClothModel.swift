@@ -11,9 +11,10 @@ import Foundation
 struct ClothModel: Identifiable {
     let id = UUID()
     let name: String
-    let category: clothCategory
     let brandName: String
-    
+    let category: clothCategory
+    let season: Season
+    let mainColor: String
 }
 
 enum clothCategory: CaseIterable {
@@ -28,4 +29,12 @@ enum clothCategory: CaseIterable {
     case shortsPants
     case skirt
     case shoes
+}
+
+
+enum Season: CaseIterable {
+    case Spring
+    case Summer
+    case Autumn
+    case Winter
 }
