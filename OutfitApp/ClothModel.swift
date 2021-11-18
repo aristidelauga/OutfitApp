@@ -8,16 +8,26 @@
 import Foundation
 
 
-struct ClothModel: Identifiable {
-    let id = UUID()
-    let name: String
-    let brandName: String
-    let category: clothCategory
-    let season: Season
-    let mainColor: String
+class ClothModel: Identifiable, ObservableObject {
+   @Published var id = UUID()
+   @Published var name: String
+   @Published var brandName: String
+   @Published var category: ClothCategory
+   @Published var season: Season
+   @Published var mainColor: String
+    
+    
+    init(name: String, brandName: String, category: ClothCategory, season: Season, mainColor: String) {
+        self.name = name
+        self.brandName = brandName
+        self.category = category
+        self.season = season
+        self.mainColor = mainColor
+    }
+    
 }
 
-enum clothCategory: CaseIterable {
+enum ClothCategory: CaseIterable {
     case hat
     case scarf
     case teeShirt

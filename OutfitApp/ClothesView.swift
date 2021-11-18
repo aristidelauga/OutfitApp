@@ -12,6 +12,8 @@ struct ClothesView: View {
     
     @State var searchableCloth = ""
     
+    @ObservedObject var cloth = ClothModel(name: "Basic Sweater", brandName: "Nike", category: .hoodie, season: .Winter, mainColor: "Wine red")
+    
     let data = (1...100).map {"Item \($0)"}
     let columns = [GridItem(.adaptive(minimum: 80))]
     
@@ -55,27 +57,8 @@ struct ClothesView: View {
                         .cornerRadius(25)
                     }
                 }
-                TabView {
-                    OutfitMenuView()
-                    .tabItem {
-                        VStack {
-                        Image(systemName: "tshirt.fill")
-                            .imageScale(.small)
-                            Text("Clothes")
-                        }
-                    }
-                    ContentView()
-                    .tabItem {
-                        Image(systemName: "figure.stand")
-                        Text("Outfits")
-                    }
-                    ContentView()
-                        .tabItem {
-                            Image(systemName: "archivebox.fill")
-                            Text("Bucket")
-                        }
-                }
-//                .frame(height: 20)
+                
+                //                .frame(height: 20)
             }
         }.padding()
     }

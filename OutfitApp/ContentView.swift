@@ -10,7 +10,23 @@ import SwiftUI
 @available(iOS 15.0, *)
 struct ContentView: View {
     var body: some View {
-        ClothesView()
+        TabView {
+            OutfitMenuView()
+                .tabItem {
+                    Label("Clothes", systemImage: "tshirt")
+                        .imageScale(.small)
+                }
+            OutfitMenuView()
+                .tabItem {
+                    Label("Outfits", systemImage: "figure.stand")
+                        .imageScale(.small)
+                }
+            OutfitMenuView()
+                .tabItem {
+                    Label("Bucket", systemImage: "archivebox")
+                        .imageScale(.small)
+                }
+        }
     }
 }
 
